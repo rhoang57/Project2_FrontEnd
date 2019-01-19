@@ -25,7 +25,10 @@ module.exports = function(app) {
     res.render("create-quiz");
   });
 
-
+  // Load quiz page
+  app.get("/quiz", function(req, res) {
+    res.render("quiz");
+  });
 
   // Load quizzes page, still needs function to .findAll or .findMany based on dropdown choice
   app.get("/quiz-selection", function(req, res) {
